@@ -11,15 +11,13 @@ class Student {
 
     public function __construct(int $id = null, int $grade_id = null, string $email = null, string $fullname = null, $birthdate = null, string $gender = null) {
 
-        if (!empty($id && $grade_id && $email && $fullname && $birthdate && $gender)) {
-            $this->id = $id;
-            $this->grade_id = $grade_id;
-            $this->email = $email;
-            $this->fullname = $fullname;
-            $this->birthdate = $birthdate;
-            $this->gender = $gender;
-        }
-        
+        $this->id = $id;
+        $this->grade_id = $grade_id;
+        $this->email = $email;
+        $this->fullname = $fullname;
+        $this->birthdate = $birthdate;
+        $this->gender = $gender;
+
     }
 
 }
